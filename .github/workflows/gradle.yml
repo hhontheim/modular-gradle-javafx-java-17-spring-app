@@ -34,3 +34,8 @@ jobs:
       with:
         arguments: clean build bootJar
         gradle-version: wrapper
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: demo.jar
+        path: ./build/libs/*.jar
