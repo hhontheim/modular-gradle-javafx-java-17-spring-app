@@ -32,7 +32,7 @@ jobs:
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
       with:
-        arguments: clean build bootJar
+        arguments: clean bootJar
         gradle-version: wrapper
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
